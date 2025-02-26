@@ -11,7 +11,6 @@ const getData = (url: string): Promise<Comment[]> => {
   return fetch(url)
     .then(response => response.json())
     .then(data => data as Comment[]);
-  // Your code here...
 }
 
 getData(COMMENTS_URL)
@@ -19,7 +18,7 @@ getData(COMMENTS_URL)
     data.forEach(item => {
       console.log(`ID: ${item.id}, Email: ${item.email}`);
     });
-    // Your code here...
+   
   });
 
 /**
