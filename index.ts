@@ -4,7 +4,6 @@ interface Comment {
   id: number;
   email: string;
 }
-
 const COMMENTS_URL = 'https://jsonplaceholder.typicode.com/comments';
 
 const getData = (url: string): Promise<Comment[]> => {
